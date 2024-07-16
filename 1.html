@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+
+<html>
+
+
+
+<head>
+    <title>나를 소개합니다: 이건희</title>
+    <meta charset = "utf-8">
+    <style>
+
+        h1{
+            text-align: center;
+            border-width: 5;
+            border-color: black;
+            border-style: solid;
+
+            padding: 20px;
+            margin: 20px;
+        }
+
+        a{
+            color:rgb(165, 45, 230);
+            text-decoration:underline;
+        }
+
+        .korean{
+            color:green;
+            text-decoration: none;
+        }
+
+        #naver{
+            color:blue;
+            text-decoration: none;
+        
+        }
+
+        div{
+            border: 5px solid gray;
+            display: grid;
+            grid-template-columns: 100px 1fr;
+        }
+
+        #gri{
+            border: 5px
+            solid pink;
+        }
+
+        @media
+        (max-width:700px){
+            #gri{
+                display:none;
+            }
+        }
+
+    </style>
+</head>
+
+<input type="button"
+value="라이트 모드" onclick="
+
+if(document.querySelector('body').dataset.mode ==='night'){
+    document.querySelector
+    ('body').style.backgroundColor =
+    'white';
+    document.querySelector
+    ('body').style.color='black';
+    document.querySelector('body').dataset.mode='day';
+    this.value='라이트 모드';
+}
+else
+{
+    document.querySelector
+    ('body').style.backgroundColor =
+    'black';
+    document.querySelector
+    ('body').style.color='white';
+    document.querySelector('body').dataset.mode='night';
+    this.value='다크 모드';
+
+}
+
+
+">
+
+<body>
+    <h1>안녕하세요 저는 이건희입니다</h1>
+    <h2>20917 이건희</h2>
+    <img src="Face.jpg" width="200">
+
+    <a>글자꾸미기</a>
+    <a href="https://naver.com" class="korean">네이버</a>
+
+    <a href="https://naver.com" class="korean" id="naver">네이버</a>
+
+    <br>
+    내가 배워본 언어들:
+
+    <li>
+        <a>
+            Python
+            C
+            C#
+        </a>
+    </li>
+
+    <div id="gri">
+        <div>김민기</div>
+        <div>민기민기동동도롱도</div>
+    </div>
+
+</body>
+
+
+</html>
